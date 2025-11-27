@@ -1,7 +1,7 @@
 library(tidyr)
 library(ggplot2)
 data <- data.frame(
-  Genotype = c("HY3C", "MC50", "MC70", "ICPL-13271", "ICPL-87"),
+  Genotype = c("A", "B", "C", "D", "E"),
   Mean_Read_Length = c(4104, 3233, 3326, 2606, 2806),
   Median_Read_Length = c(3502, 2257, 1817, 1772, 1610),
   N50 = c(5487, 5324, 6265, 4061, 5109)
