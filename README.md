@@ -1,9 +1,9 @@
-# Genomic Data Visualization – R Scripts
+# 📌 Genomic Data Visualization – R Scripts
 
 This repository contains a collection of R scripts I use to visualize various types of genomic data.  
 The goal is to create clear, publication-quality plots for genome analysis, comparative genomics, pangenomics, repeat annotation, and other bioinformatics workflows.
 
-##  Contents
+## 🎯 Contents
 - Scripts for BUSCO visualizations  
 - Genome assembly quality plots    
 - Repeat content plots  
