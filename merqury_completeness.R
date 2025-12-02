@@ -2,8 +2,8 @@ library(ggplot2)
 
 # Your data (order will be preserved exactly as written here)
 df <- data.frame(
-  Genotype = factor(c("HY3C", "MC50", "MC70", "ICPL-13271", "ICPL-87"),
-                    levels = c("HY3C", "MC50", "MC70", "ICPL-13271", "ICPL-87")),
+  Genotype = factor(c("A", "B", "C", "D", "E"),
+                    levels = c("A", "B", "C", "D", "E")),
   Completeness = c(95.73, 97.24, 94.96, 88.38, 92.07)
 )
 
