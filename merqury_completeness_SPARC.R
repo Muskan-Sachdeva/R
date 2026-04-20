@@ -4,7 +4,7 @@ library(ggplot2)
 df <- data.frame(
   Genotype = factor(c("HY3C", "MC50", "ICPL-13271", "ICPL-87"),
                     levels = c("HY3C", "MC50", "ICPL-13271", "ICPL-87")),
-  Completeness = c(95.73, 97.24, 88.38, 92.07)
+  Completeness = c(95.73, 97.24, 94.96, 92.07)
 )
 
 ggplot(df, aes(x = Genotype, y = Completeness, fill = Genotype)) +
