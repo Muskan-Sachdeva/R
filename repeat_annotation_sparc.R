@@ -4,11 +4,11 @@ library(dplyr)
 # 1️⃣ Main repeat classes
 repeat_data <- data.frame(
   Genotype = c("HY-3C", "MC-50", "ICPL-13271", "ICPL-87"),
-  Retroelements = c(34.91, 39.39, 30.04, 34.12),
-  DNA_Transposons = c(20.23, 19.95, 18.99, 19.47),
-  Unclassified = c(6.47, 5.87, 5.79, 5.27),
-  Simple_Repeats = c(1.30, 1.29, 1.27, 1.32),
-  Total_Interspersed = c(62.91, 66.50, 56.08, 60.18)
+  Retroelements = c(34.91, 39.39, 38.09, 34.12),
+  DNA_Transposons = c(20.23, 19.95, 20.81, 19.47),
+  Unclassified = c(6.47, 5.87, 6.46, 5.27),
+  Simple_Repeats = c(1.30, 1.29, 1.29, 1.32),
+  Total_Repeats = c(62.91, 66.50, 66.66, 60.18)
 )
 
 # 2️⃣ Long format for stacked bars
@@ -29,7 +29,7 @@ ggplot(repeat_long,
   geom_text(data = repeat_data,
             aes(x = Genotype,
                 y = Retroelements + DNA_Transposons + Unclassified + Simple_Repeats,
-                label = paste0(round(Total_Interspersed,2), "%")),
+                label = paste0(round(Total_Repeats,2), "%")),
             inherit.aes = FALSE,
             vjust = -0.5,
             size = 4.5,
