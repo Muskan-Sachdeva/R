@@ -1,8 +1,9 @@
 library(ggplot2)
 
 data <- data.frame(
-  Genotype = c("HY3C", "MC50", "ICPL-13271", "ICPL-87"),
-  Complete = c(98.8, 99.3, 95.2, 98.3)
+  Genotype = factor(c("HY3C", "MC50", "ICPL-13271", "ICPL-87"),
+  levels = c("HY3C", "MC50", "ICPL-13271", "ICPL-87")),
+  Complete = c(98.8, 99.3, 99.2, 98.3)
 )
 
 ggplot(data, aes(x = Genotype, y = Complete, fill = Genotype)) +
@@ -46,8 +47,9 @@ ggplot(data, aes(x = Genotype, y = Complete, fill = Genotype)) +
 library(ggplot2)
 
 data <- data.frame(
-  Genotype = c("HY3C", "MC50", "ICPL-13271", "ICPL-87"),
-  Complete = c(98.8, 99.3, 95.2, 98.3)
+  Genotype = factor(c("HY3C", "MC50", "ICPL-13271", "ICPL-87"),
+                    levels = c("HY3C", "MC50", "ICPL-13271", "ICPL-87")),              
+  Complete = c(98.8, 99.3, 99.2, 98.3)
 )
 
 ggplot(data, aes(x = Genotype, y = Complete, fill = Genotype)) +
