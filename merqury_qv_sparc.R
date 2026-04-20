@@ -5,9 +5,10 @@ library(ggplot2)
 
 # 1️⃣ Data
 qv_comparison_data <- data.frame(
-  Genotype = c("HY3C", "MC50", "ICPL-13271", "ICPL-87"),
-  QV_Before_Polishing = c(34.127, 36.59, 32.32, 33.90),
-  QV_After_Polishing = c(39.52, 42.10, 38.04, 39.79)
+  Genotype = factor(c("HY3C", "MC50", "ICPL-13271", "ICPL-87"),
+  levels = c("HY3C", "MC50", "ICPL-13271", "ICPL-87")),
+  QV_Before_Polishing = c(34.127, 36.59, 35.90, 33.90),
+  QV_After_Polishing = c(39.52, 42.10, 41.20, 39.79)
 )
 
 # 2️⃣ Convert to long format
