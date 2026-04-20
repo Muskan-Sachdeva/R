@@ -4,7 +4,7 @@ library(ggplot2)
 # Create dataframe
 data <- data.frame(
   Genotype = c("HY-3C", "MC-50", "ICPL-13271", "ICPL-87"),
-  Genes = c(44395, 46975, 39946, 43734)
+  Genes = c(44395, 46975, 49500, 43734)
 )
 
 # Convert to factor to control order
